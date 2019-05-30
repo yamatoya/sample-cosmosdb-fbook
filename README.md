@@ -333,7 +333,9 @@ Likeドキュメントに、Likeした人の名前を持たせます。
 
 ![](./img/44.png)
 
-ここで必要なデータは、直近で更新されたデータでした。そこで、最近更新されたデータを格納するコンテナーを用意し、パーティションキーをtypeにします。
+ここで必要なデータは、直近で更新されたデータでした。そこで、[Change Feed](https://docs.microsoft.com/ja-jp/azure/cosmos-db/change-feed)を利用し、パーティションキーをtypeにします。
+
+Azure CosmosDBは、Change Feedを提供しており、変更されたドキュメントは変更された順に並べ替えられた一覧として出力されます。
 
 ![](./img/45.png)
 
